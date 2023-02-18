@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3"
+    tools:context="com.example.examples.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name"
+        android:padding="8dp"/>
+    <EditText
+        android:id="@+id/et_name_fn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2" />
+    <Button
+        android:id="@+id/button_submit_fn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Middle Name"
+        android:padding="8dp"/>
+    <EditText
+        android:id="@+id/et_name_mn"
+        android:padding="10dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2" />
+    <Button
+        android:id="@+id/button_submit_mn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        android:padding="8dp"/>
+    <EditText
+        android:id="@+id/et_name_ln"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2" />
+    <Button
+        android:id="@+id/button_submit_ln"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        />
+    <Button
+        android:id="@+id/button_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        />
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/button_pic"
+        android:layout_below="@+id/tv_ln_hardcoded"
+        />
+    <Button
+        android:id="@+id/button_submit_final"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        />
+
+
+
+
+
+</GridLayout>
