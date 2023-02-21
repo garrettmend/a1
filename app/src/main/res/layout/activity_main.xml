@@ -58,12 +58,13 @@
         android:layout_height="wrap_content"
         android:text="@string/submit"
         />
+
     <Button
         android:id="@+id/button_pic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/submit"
-        />
+        android:text="Camera"
+        tools:text="Camera" />
 
     <ImageView
         android:id="@+id/iv_pic"
@@ -71,12 +72,13 @@
         android:layout_height="52dp"
         android:layout_below="@+id/tv_ln_hardcoded"
         android:layout_toRightOf="@id/button_pic" />
+
     <Button
         android:id="@+id/button_submit_final"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/submit"
-        />
+        tools:text="@string/submit" />
 
 
 

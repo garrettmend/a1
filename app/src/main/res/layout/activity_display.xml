@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".DisplayActivity">
 
+    <TextView
+        android:id="@+id/mn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="27dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/msg"
+        app:layout_constraintEnd_toStartOf="@+id/ln"
+        app:layout_constraintStart_toEndOf="@+id/fn" />
+
+    <TextView
+        android:id="@+id/fn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mn"
+        app:layout_constraintEnd_toStartOf="@+id/mn"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ln"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mn" />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:text="is logged in!"
+        app:layout_constraintStart_toEndOf="@+id/fn"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
